@@ -8,45 +8,10 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <title>会动的简历</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <style id="style">
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      #string {
-        word-break: break-all;
-      }
-      #taiji {
-        position: fixed;
-        top: 20px;
-        right: 50%;
-        transform: translateX(50%);
-      }
-      #taiji:after,
-      #taiji:before {
-        display: block;
-        content: "";
-        position: absolute;
-      }
-      @media (max-width: 500px) {
-        #string {
-          overflow: auto;
-        }
-        #lower_screen,
-        #string {
-          height: 50vh;
-        }
-        #taiji {
-          position: relative;
-          top: 0;
-          left: 0;
-          transform: translate(45%, 35%);
-        }
-      }
-    </style>
+    <style id="style"></style>
     <div id="string"></div>
     <div id="lower_screen"><div id="taiji"></div></div>
     <script src="index.e6a25644.js"></script>

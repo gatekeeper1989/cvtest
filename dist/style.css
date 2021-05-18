@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#string {
+  word-break: break-all;
+}
+#taiji {
+  position: fixed;
+  top: 20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+#taiji:after,
+#taiji:before {
+  display: block;
+  content: "";
+  position: absolute;
+}
+@media (max-width: 500px) {
+  #string {
+    overflow: auto;
+  }
+  #lower_screen,
+  #string {
+    height: 50vh;
+  }
+  #taiji {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(45%, 35%);
+  }
+}
