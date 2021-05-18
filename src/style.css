@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#string {
+  word-break: break-all;
+}
+#taiji {
+  position: fixed;
+  top: 20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+#taiji::before {
+  display: block;
+  content: "";
+  position: absolute;
+}
+#taiji::after {
+  display: block;
+  content: "";
+  position: absolute;
+}
+@media (max-width: 500px) {
+  /*若屏幕宽度小于500*/
+
+  #string {
+    height: 50vh;
+    overflow: auto;
+  }
+  #lower_screen {
+    height: 50vh;
+  }
+  #taiji {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(45%, 35%);
+  }
+}
