@@ -25,12 +25,12 @@
 @media (max-width: 500px) {
   /*若屏幕宽度小于500*/
 
+  #lower_screen {
+    height: 50vh;
+  }
   #string {
     height: 50vh;
     overflow: auto;
-  }
-  #lower_screen {
-    height: 50vh;
   }
   #taiji {
     position: relative;

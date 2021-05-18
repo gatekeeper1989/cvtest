@@ -20,10 +20,10 @@
 }
 @media (max-width: 500px) {
   #string {
+    height: 50vh;
     overflow: auto;
   }
-  #lower_screen,
-  #string {
+  #lower_screen {
     height: 50vh;
   }
   #taiji {
